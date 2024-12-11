@@ -59,6 +59,7 @@ case $cmd in
     OCPV=${FROMV##*:}
     from=registry.redhat.io/redhat/redhat-operator-index:${OCPV}
     ./opm migrate $(opm_alpha_params "${frag}") "$from" "./catalog-migrate-${frag}"
+    # convert-template does not support opm alpha params (as of right now)
     ./opm alpha convert-template basic "./catalog-migrate-${frag}/${package_name}/catalog.json" > "${frag}/catalog-template.json"
     ./opm alpha render-template basic $(opm_alpha_params "${frag}") "${frag}/catalog-template.json" > "${frag}/catalog/${package_name}/catalog.json"
     rm -rf "./catalog-migrate-${frag}"
