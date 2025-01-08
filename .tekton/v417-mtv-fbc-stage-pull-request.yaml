@@ -12,7 +12,7 @@ metadata:
       || "v4.17/catalog.Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: mtv-fbc-417
+    appstudio.openshift.io/application: mtv-fbc-stage-417
     appstudio.openshift.io/component: v417-mtv-fbc-stage
     pipelines.appstudio.openshift.io/type: build
   name: v417-mtv-fbc-stage-on-pull-request
