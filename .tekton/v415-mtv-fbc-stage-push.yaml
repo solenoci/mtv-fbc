@@ -10,7 +10,7 @@ metadata:
       == "stage"
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: mtv-fbc-415
+    appstudio.openshift.io/application: mtv-fbc-stage-415
     appstudio.openshift.io/component: v415-mtv-fbc-stage
     pipelines.appstudio.openshift.io/type: build
   name: v415-mtv-fbc-stage-on-push
