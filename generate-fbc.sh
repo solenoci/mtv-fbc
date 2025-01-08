@@ -57,7 +57,7 @@ case $cmd in
 # shellcheck disable=SC2086
     FROMV=$(grep FROM "${frag}"/catalog.Dockerfile)
     OCPV=${FROMV##*:}
-    from=registry.redhat.io/redhat/redhat-operator-index:${OCPV}
+    from=registry.stage.redhat.io/redhat/redhat-operator-index:${OCPV}
     ./opm migrate $(opm_alpha_params "${frag}") "$from" "./catalog-migrate-${frag}"
     # convert-template does not support opm alpha params (as of right now)
     ./opm alpha convert-template basic "./catalog-migrate-${frag}/${package_name}/catalog.json" > "${frag}/catalog-template.json"
