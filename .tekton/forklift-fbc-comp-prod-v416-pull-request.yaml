@@ -29,9 +29,9 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: dockerfile
-    value: Dockerfile
-  - name: path-context
     value: v4.16/catalog.Dockerfile
+  - name: path-context
+    value: ./
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
