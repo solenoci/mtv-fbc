@@ -24,7 +24,32 @@
         {
             "entries": [
                 {
+                    "name": "mtv-operator.v2.8.0",
+                    "skipRange": "\u003e=0.0.0 \u003c2.8.0"
+                },
+                {
+                    "name": "mtv-operator.v2.8.1",
+                    "replaces": "mtv-operator.v2.8.0",
+                    "skipRange": "\u003e=0.0.0 \u003c2.8.1"
+                },
+                {
+                    "name": "mtv-operator.v2.8.2",
+                    "replaces": "mtv-operator.v2.8.1",
+                    "skipRange": "\u003e=0.0.0 \u003c2.8.2"
+                },
+                {
+                    "name": "mtv-operator.v2.8.3",
+                    "replaces": "mtv-operator.v2.8.2",
+                    "skipRange": "\u003e=0.0.0 \u003c2.8.3"
+                },
+                {
+                    "name": "mtv-operator.v2.8.4",
+                    "replaces": "mtv-operator.v2.8.3",
+                    "skipRange": "\u003e=0.0.0 \u003c2.8.4"
+                },
+                {
                     "name": "mtv-operator.v2.8.5",
+                    "replaces": "mtv-operator.v2.8.4",
                     "skipRange": "\u003e=0.0.0 \u003c2.8.5"
                 }
             ],
@@ -48,7 +73,27 @@
         },
         {
             "schema": "olm.bundle",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:29ce66f04b7339725d0e3dd7d4cfeca794c33e917e0deef00c44149a86a1c3b9"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:54d25dc6ed0399db7ecf20f8dffab18e252fe3134c7eab164c326923700e21df"
+        },
+        {
+            "schema": "olm.bundle",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:6d15ad90ff0603b4a72de2c9a5c31120be3fa3104f29876b4f69d690220ae1de"
+        },
+        {
+            "schema": "olm.bundle",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:15e8a7642ebb46054938bdd4a65ce680103e8aa1927eb37f417923d64373b410"
+        },
+        {
+            "schema": "olm.bundle",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:f08a15f01d6ebb614a42d5b6912bb040ebcc683b0af2a8ab29824149c2f78a15"
+        },
+        {
+            "schema": "olm.bundle",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:0806bbf5049e3d45649b39078177c575b332e58ce6808031b509ca02a5be9fd3"
+        },
+        {
+            "schema": "olm.bundle",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:8ab1d701eb3b598b39c4fe30026bbecb6c025236d5064cd25d7d7a05290c250b"
         },
         {
             "schema": "olm.bundle",
