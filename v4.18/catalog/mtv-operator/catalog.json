@@ -1,0 +1,2530 @@
+{
+    "schema": "olm.package",
+    "name": "mtv-operator",
+    "defaultChannel": "release-v2.9",
+    "icon": {
+        "base64data": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTAwO308L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjgsMi4yNUE3Ljc1ODcsNy43NTg3LDAsMCwxLDM1Ljc1LDEwVjI4QTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMjgsMzUuNzVIMTBBNy43NTg3LDcuNzU4NywwLDAsMSwyLjI1LDI4VjEwQTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMTAsMi4yNUgyOE0yOCwxSDEwYTksOSwwLDAsMC05LDlWMjhhOSw5LDAsMCwwLDksOUgyOGE5LDksMCwwLDAsOS05VjEwYTksOSwwLDAsMC05LTlaIi8+PHBhdGggZD0iTTI3LDE1LjkxMzFIMTYuODE3OGwuNzc4OS0uNzc4M2EuNjI1Ni42MjU2LDAsMSwwLS44ODQ4LS44ODQ4bC0xLjg0NjcsMS44NDY3YS42MjU5LjYyNTksMCwwLDAsLjAwMS44ODQ3bDEuODQ2NywxLjg0NTdhLjYyNDkuNjI0OSwwLDEsMCwuODgyOC0uODg0N2wtLjc4LS43NzkzSDI2LjM3NVYyNi4zNzVIMTcuMTYzMVYyNC44OWEuNjI1LjYyNSwwLDAsMC0xLjI1LDBWMjdhLjYyNTYuNjI1NiwwLDAsMCwuNjI1LjYyNUgyN0EuNjI1Ni42MjU2LDAsMCwwLDI3LjYyNSwyN1YxNi41MzgxQS42MjU2LjYyNTYsMCwwLDAsMjcsMTUuOTEzMVoiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzLjEzMzgsMjEuMDE4NmwtMS44NDY3LTEuODQ1N2EuNjI0OS42MjQ5LDAsMSwwLS44ODI4Ljg4NDdsLjc4Ljc3OTNIMTEuNjI1VjExLjYyNWg5LjIxMTlWMTMuMTFhLjYyNS42MjUsMCwwLDAsMS4yNSwwVjExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS0uNjI1SDExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS42MjVWMjEuNDYxOWEuNjI1Ni42MjU2LDAsMCwwLC42MjUuNjI1SDIxLjE4MjJsLS43Nzg5Ljc3ODNhLjYyNTYuNjI1NiwwLDAsMCwuODg0OC44ODQ4bDEuODQ2Ny0xLjg0NjdhLjYyNTkuNjI1OSwwLDAsMC0uMDAxLS44ODQ3WiIvPjwvc3ZnPg==",
+        "mediatype": "image/svg+xml"
+    }
+}
+{
+    "schema": "olm.channel",
+    "name": "release-v2.7",
+    "package": "mtv-operator",
+    "entries": [
+        {
+            "name": "mtv-operator.v2.7.2",
+            "skipRange": ">=0.0.0 <2.7.2"
+        }
+    ]
+}
+{
+    "schema": "olm.channel",
+    "name": "release-v2.8",
+    "package": "mtv-operator",
+    "entries": [
+        {
+            "name": "mtv-operator.v2.8.0",
+            "skipRange": ">=0.0.0 <2.8.0"
+        },
+        {
+            "name": "mtv-operator.v2.8.1",
+            "replaces": "mtv-operator.v2.8.0",
+            "skipRange": ">=0.0.0 <2.8.1"
+        },
+        {
+            "name": "mtv-operator.v2.8.2",
+            "replaces": "mtv-operator.v2.8.1",
+            "skipRange": ">=0.0.0 <2.8.2"
+        },
+        {
+            "name": "mtv-operator.v2.8.3",
+            "replaces": "mtv-operator.v2.8.2",
+            "skipRange": ">=0.0.0 <2.8.3"
+        },
+        {
+            "name": "mtv-operator.v2.8.4",
+            "replaces": "mtv-operator.v2.8.3",
+            "skipRange": ">=0.0.0 <2.8.4"
+        },
+        {
+            "name": "mtv-operator.v2.8.5",
+            "replaces": "mtv-operator.v2.8.4",
+            "skipRange": ">=0.0.0 <2.8.5"
+        }
+    ]
+}
+{
+    "schema": "olm.channel",
+    "name": "release-v2.9",
+    "package": "mtv-operator",
+    "entries": [
+        {
+            "name": "mtv-operator.v2.9.0"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.7.2",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:365115407964d182de7e7564438c6fd089e2c0bcc0f94ec48621ca0cc2bf0fe4",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.7.2"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel8-operator@sha256:8dbeace89a921e0d11f85378099e39cc357702d2f20dfb9d14cebbe150d2500d",
+                    "createdAt": "2024-10-11T14:05:47Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.7.2",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.5 is supported on OpenShift 4.12 and 4.13\n\nMigration Toolkit for Virtualization 2.6 is supported on OpenShift 4.14 and 4.15\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.16 and 4.17\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/articles/6001751).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:a65780c5680a6fbbd0e3d0eed423b14a9c9b3d7d17f801c1eb6eb6b777384ca5"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:8337924489a1747d4bbca6dd6ac42210731cf721b549b5830846b271621e2ac1"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:6d0aeffbccaf9df83b42c530bf82707aa7c1cc16f72a5ef30b66fbd562c01ab3"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:fd6fb83bbeb9010f7e91f0afc91beac0bf38cb79c2de8f533a2bd07b1b238262"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:1dd8f0f08ff1323d910fea8adfa13cef64c2fd2f01968e4d9d55f71cf42835d3"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:365115407964d182de7e7564438c6fd089e2c0bcc0f94ec48621ca0cc2bf0fe4"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:936fd68d7659683de7789fcf34d2e5873bd4bd1534c01c2d80501647f7c3c442"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:8c05a303be5c536f4051ef291475b578d4d38ca0946fb4b4dd8bca376ef432aa"
+        },
+        {
+            "name": "mtv-rhel8-operator-8dbeace89a921e0d11f85378099e39cc357702d2f20dfb9d14cebbe150d2500d-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel8-operator@sha256:8dbeace89a921e0d11f85378099e39cc357702d2f20dfb9d14cebbe150d2500d"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel8-operator@sha256:8dbeace89a921e0d11f85378099e39cc357702d2f20dfb9d14cebbe150d2500d"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:e91c2e5473f3e24c185dd25e9843f333e6d7419d9c5f4d4396669717b5969683"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:c543dbbb66fcac02345e1d3c12333780721bf049dca0f0a27d4c55b15a5d3e14"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:4bea07e101740afc36a1617363a79b1c474efcacd584f6e475a53b3f2395a079"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.0",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:54d25dc6ed0399db7ecf20f8dffab18e252fe3134c7eab164c326923700e21df",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.0"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5cc77fc2b02d9c23eb0cdc37e4de86412b01e53d23af944fc589626856500bf4",
+                    "createdAt": "2025-03-25T17:39:29Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.0",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:950e60a0b3cad86e75ab777f5d135ee11ddf306d30b100db719e7b74d64e7928"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:faf1643f88f6dd059a8f54d03a0a44f499829ed1a6ceaa31d660fc8b6c61e043"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:0cfae88f88f2aaa810842a79f5869c82e8679129ec3b309f8ab4a1a3be4a87e8"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:7775e212cf10c195778a8053894e64b96ccac45d92744abfaf7e1550fdabd385"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:5975a52e53a7c84183c11fb847fbc4d60d20fba560c20258f4705be883826f27"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:54d25dc6ed0399db7ecf20f8dffab18e252fe3134c7eab164c326923700e21df"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:c00802718a19033d3bb982c2da51871fb8f17501bada19b0bd1329c1c3e0a2de"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:a787f57c6618c5c1de1a8ff26ea18154c4acfd1bc8d2cb1a9d751c1c2f14f4c8"
+        },
+        {
+            "name": "mtv-rhel9-operator-5cc77fc2b02d9c23eb0cdc37e4de86412b01e53d23af944fc589626856500bf4-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5cc77fc2b02d9c23eb0cdc37e4de86412b01e53d23af944fc589626856500bf4"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5cc77fc2b02d9c23eb0cdc37e4de86412b01e53d23af944fc589626856500bf4"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:25ca2c7e7a9e26fdef3e5d8b8a2f3117a93712eccc08dfbee40956bfc1a5f609"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:14d75bbadf861562ac90b93eb735a1004ab81996baefa37ba974021df3677f0f"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:fb368200eb1f818a279338af110b062beb3779a8c8bf1cfa11f2f3accfad7b24"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.1",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:6d15ad90ff0603b4a72de2c9a5c31120be3fa3104f29876b4f69d690220ae1de",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.1"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d089da945f46ff923e5ab95b70a7f923a7099e49ac29d8b2615f0359782a8f23",
+                    "createdAt": "2025-04-10T11:52:50Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.1",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:0642a9b584a47f7979e55f42ace40673c4fa98938b0bc6b7bde7c68de622da15"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:9229275c1cc25a324fee6c4ce6b2401abf368f290adecf8c42d6316f6d13008b"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:28a2e469990945637aae5fe60ac2227b5a30c472e69508d9c0203445b1d4978b"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:b5bfc7521e8b95124f7380078fbe37d01a29f825e056a2f7f384e4266be18b0a"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:b253b62059a740b9bf8ad2d2caa5e8f8e8d343c4bc153bc773953412eab7bceb"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:6d15ad90ff0603b4a72de2c9a5c31120be3fa3104f29876b4f69d690220ae1de"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:cdaceee46e842ab3dcc0eb9ebb977bbc7efa9be10a9bb822bc98a5cbbe6f31da"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:964e57472f21293078ce69836b8ae41b63be9721036a43162294e771a7dca6ed"
+        },
+        {
+            "name": "mtv-rhel9-operator-d089da945f46ff923e5ab95b70a7f923a7099e49ac29d8b2615f0359782a8f23-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d089da945f46ff923e5ab95b70a7f923a7099e49ac29d8b2615f0359782a8f23"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d089da945f46ff923e5ab95b70a7f923a7099e49ac29d8b2615f0359782a8f23"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:413fde3f77f989f384f19bdb9fea556ae49fad829906a6a77b5daa6777bba731"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:5f2a1135ee22d28b4b5fea4b9335eed4978fbb2f9a880f6504d2d3cfd16f5089"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:3778c2f7fe34e400667ef6f173bef55de15cef57d44ede480f3bfadee9b1d8b3"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.2",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:15e8a7642ebb46054938bdd4a65ce680103e8aa1927eb37f417923d64373b410",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "VSphereXcopyVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.2"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5bbd9a9f7d61d6552bbbc735f560bfd0fb3ad45368390bb81c8781219d8f91fe",
+                    "createdAt": "2025-04-22T19:10:36Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.2",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        },
+                        {
+                            "name": "vspherexcopyvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "VSphereXcopyVolumePopulator",
+                            "displayName": "VSphereXcopyVolumePopulator",
+                            "description": "VSphere Xcopy Volume Populator"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:4c7fea62fb4fd4b42e5b9dc75e2e500a24fe0c610c5fd552a139815e03b37646"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:2cd381ac00ce027107ba7a938e0355524060aeb0e4b5aff518159d47ed1ebd94"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:7ffa35679b48360ba12ede466c5c1980944e324d4bc0bb0ae558d6aac7f803f7"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:9ef4f47882e5854e1ad597cb906b2dec98306fb5cb2496d31016098d4a292503"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:95843f03b72de1354fa2ef8a99b9b26aea4cd1d426d81ec603bd7f9f9ac1bfa1"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:15e8a7642ebb46054938bdd4a65ce680103e8aa1927eb37f417923d64373b410"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:fc2a11b7a8995adf68dc047782b391553f64c209a72d148180a5c6a49d799470"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:ebb5a1c684f2f491f67f64279c7c46ce399208ee59cf5b33040ed10b8fca2625"
+        },
+        {
+            "name": "mtv-rhel9-operator-5bbd9a9f7d61d6552bbbc735f560bfd0fb3ad45368390bb81c8781219d8f91fe-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5bbd9a9f7d61d6552bbbc735f560bfd0fb3ad45368390bb81c8781219d8f91fe"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:5bbd9a9f7d61d6552bbbc735f560bfd0fb3ad45368390bb81c8781219d8f91fe"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:cf4997baaaea23de22fb6f676aa772897c1ca375edd5d6137c26534a0af66655"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:03fe4e6d99b70cc92d2add95226a331dad5cc0b8cf5c33badf0bcb5d3459594b"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:a0d51b456b2aaf2b228ba80c3a3b60253776a6246095de5a0bda6317dec6677f"
+        },
+        {
+            "name": "vsphere_xcopy_volume_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:d0b0dcd844005c676ac9c13b93218ae602f72b12d74bc3fd77c364a5076b1fa5"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.3",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:f08a15f01d6ebb614a42d5b6912bb040ebcc683b0af2a8ab29824149c2f78a15",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "VSphereXcopyVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.3"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:f6ff0ece2e67f8da9020338cb7bc5bf8dd2d379285fe8f86fc5e671550625e8e",
+                    "createdAt": "2025-05-07T18:59:12Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.3",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        },
+                        {
+                            "name": "vspherexcopyvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "VSphereXcopyVolumePopulator",
+                            "displayName": "VSphereXcopyVolumePopulator",
+                            "description": "VSphere Xcopy Volume Populator"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:a37ddd20f3d6b043ed500a90c282e1362fddb3885a7fc37af9f3d7d4a3d4dde1"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:f9ce816f97317629fb51aed1a94492eed3236bdb6c5d9820bd4d23ec1e998154"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:55c26b2235a3564379d939480f4d3316f307784255546e331fc1ad494f963f42"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:e7c0d29c2150259e2624122bd5523025bef6cbd8c20e23fae791b7553dc60475"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:a4c5ed122c322be4ee86331dd99cd951a9e0dbf104f688793fb0db492a0a8e39"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:f08a15f01d6ebb614a42d5b6912bb040ebcc683b0af2a8ab29824149c2f78a15"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:19e4e8858e53a05fd17dd38f6f2f45641c4a6e2bb68f44cc194d4bab8f295423"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:e81bdfca46c78356b5d2f0fbd6138368d6dfff4e20534f6cfc46baa827a8787d"
+        },
+        {
+            "name": "mtv-rhel9-operator-f6ff0ece2e67f8da9020338cb7bc5bf8dd2d379285fe8f86fc5e671550625e8e-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:f6ff0ece2e67f8da9020338cb7bc5bf8dd2d379285fe8f86fc5e671550625e8e"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:f6ff0ece2e67f8da9020338cb7bc5bf8dd2d379285fe8f86fc5e671550625e8e"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:f3560e666916617ea59645323e877fa9f80487d259cd3c20b8fd55d14ef1da0e"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:ddeaf2650012809bf4ef8dffa41fe67cefc0d71487e601ce25a24b9aa6606452"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:674b3acc276f7e51bb7c804ccfc21dfb88954eb3aa4c9c4df1c13018e1348c11"
+        },
+        {
+            "name": "vsphere_xcopy_volume_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:9773f9910fc199f3e2bb82138e7df65b3ef3bc269e77512b93d051d39fefbcea"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.4",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:0806bbf5049e3d45649b39078177c575b332e58ce6808031b509ca02a5be9fd3",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "VSphereXcopyVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.4"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:b33f03a9bc0b21183f8cc3338aa74653305e78d08f7aed932779649c29abfa5a",
+                    "createdAt": "2025-05-13T02:24:14Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.4",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        },
+                        {
+                            "name": "vspherexcopyvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "VSphereXcopyVolumePopulator",
+                            "displayName": "VSphereXcopyVolumePopulator",
+                            "description": "VSphere Xcopy Volume Populator"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:22d9e8385c5b52285850d3a5f009e9a02538a8eb954e2d669ee1c74f2a4dd20b"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:bca8985a9780e3049e730061a668624d6d4d8fa8d3240bdb401eefe2a349e32b"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:fe3c2b0e72ad0cea361e543e7957bb5738aa689f11c20ac75c7e05d10b6f5c2a"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:a23c5d2e9d60a330b8518fe43171ac0c2a824d1a713dfa544a9cc08bd6dd9571"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:ecf828c4979971b486726689389137762427b15b4743567c4f3e2634e9c1216d"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:0806bbf5049e3d45649b39078177c575b332e58ce6808031b509ca02a5be9fd3"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:f2f1b84ca7a328c71f4b14873a9221ac5d89b348b879b22e804925072ea8c6d5"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:552ff7f42cd6328b74e0b72a03acf3fa8629ee01ea28a6e40c5e7226d890ebab"
+        },
+        {
+            "name": "mtv-rhel9-operator-b33f03a9bc0b21183f8cc3338aa74653305e78d08f7aed932779649c29abfa5a-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:b33f03a9bc0b21183f8cc3338aa74653305e78d08f7aed932779649c29abfa5a"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:b33f03a9bc0b21183f8cc3338aa74653305e78d08f7aed932779649c29abfa5a"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:fac58cdde028a06bcb3bbf1507246e4de1afabf7586b7bd202cdd3493c6a958b"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:45ed8aecabf18be3abf85b8c87681ef67ddb440b469fc1c8342c92768840aa24"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:61feded378f1d773aa439dfce9e949c01ac0db889f5e548cec6de37d8d5378b4"
+        },
+        {
+            "name": "vsphere_xcopy_volume_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:020308010f7a07761ded4facd8b489249f6affac4d0790ef5880714b2a8513ad"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.8.5",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:8ab1d701eb3b598b39c4fe30026bbecb6c025236d5064cd25d7d7a05290c250b",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "VSphereXcopyVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.8.5"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"<base64-encoded-playbook>\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d267c04e414d986daba9750bad590d6387bcb798df64bc583da97d88b182dc9f",
+                    "createdAt": "2025-05-29T18:29:44Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "olm.skipRange": ">=0.0.0 <2.8.5",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        },
+                        {
+                            "name": "vspherexcopyvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "VSphereXcopyVolumePopulator",
+                            "displayName": "VSphereXcopyVolumePopulator",
+                            "description": "VSphere Xcopy Volume Populator"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.7 is supported on OpenShift 4.15, 4.16 and 4.17\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift",
+                        "url": "http://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "api",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:8933f1a8dad97352e225e1a1f7f0edbd2820fd60ff1d0c80a49065257b6ca9f1"
+        },
+        {
+            "name": "ui_plugin",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:1344719931cedfd7c64acc9419af6fc0cc5850c23b2aa3e597d9f92600b6259b"
+        },
+        {
+            "name": "controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9@sha256:80fdc43060387a455d177019de81ab274dbdf754b9ab68a61696068d9c4bfaac"
+        },
+        {
+            "name": "must_gather",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8@sha256:6a3c257eae44adde04d7b2a7e3b0f2bb966f0e6aa53a23302258618bb27d064b"
+        },
+        {
+            "name": "openstack_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:4861381a24d81f3f25153af9c066839be83cf74adf5ec900464719197611af27"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:8ab1d701eb3b598b39c4fe30026bbecb6c025236d5064cd25d7d7a05290c250b"
+        },
+        {
+            "name": "ova_provider_server",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9@sha256:49b2a58eeb994c5398f31e89abeb2959b079207de29fae876eb8ab90a2f79b95"
+        },
+        {
+            "name": "populator_controller",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9@sha256:84998b76aab53a0ca9a83a6b8baf3cb408763fba07008e3c892e2669740b481f"
+        },
+        {
+            "name": "mtv-rhel9-operator-d267c04e414d986daba9750bad590d6387bcb798df64bc583da97d88b182dc9f-annotation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d267c04e414d986daba9750bad590d6387bcb798df64bc583da97d88b182dc9f"
+        },
+        {
+            "name": "forklift-operator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d267c04e414d986daba9750bad590d6387bcb798df64bc583da97d88b182dc9f"
+        },
+        {
+            "name": "rhv_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8@sha256:930d472f486c74d36ffc3e9ed510044e15745a6350503b386f5221c82df2a7f6"
+        },
+        {
+            "name": "validation",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9@sha256:d2f7d3e51e225c045376eb435169b2a7b11e0b7de98d11e78d2a21d4540565d5"
+        },
+        {
+            "name": "virt_v2v",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9@sha256:931b5d94251a065c819b3e1b39a9d35e0919174b98b0ffde86dae71a15f2f1d5"
+        },
+        {
+            "name": "vsphere_xcopy_volume_populator",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:d6ca7787981b6229eedce40893280381abfaa124dd84be3bc1fb6f043a22d2d1"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "mtv-operator.v2.9.0",
+    "package": "mtv-operator",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:e957f6701d9ed836fe0b0160d2df1a1370c276f977f5ad77718392c5fbb7cf1d",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "ForkliftController",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Hook",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Host",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Migration",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "NetworkMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OpenstackVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "OvirtVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Plan",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "Provider",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "StorageMap",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "forklift.konveyor.io",
+                "kind": "VSphereXcopyVolumePopulator",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "mtv-operator",
+                "version": "2.9.0"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"ForkliftController\",\n    \"metadata\": {\n      \"name\": \"forklift-controller\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"feature_ui_plugin\": \"true\",\n      \"feature_validation\": \"true\",\n      \"feature_volume_populator\": \"true\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Hook\",\n    \"metadata\": {\n      \"name\": \"example-hook\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"image\": \"quay.io/konveyor/hook-runner\",\n      \"playbook\": \"\\u003cbase64-encoded-playbook\\u003e\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Host\",\n    \"metadata\": {\n      \"name\": \"example-host\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"id\": \"\",\n      \"ipAddress\": \"\",\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Migration\",\n    \"metadata\": {\n      \"name\": \"example-migration\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"plan\": {\n        \"name\": \"example-plan\",\n        \"namespace\": \"openshift-mtv\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"NetworkMap\",\n    \"metadata\": {\n      \"name\": \"example-networkmap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"name\": \"\",\n            \"namespace\": \"\",\n            \"type\": \"pod\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OpenstackVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-openstack\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"identityUrl\": \"\",\n      \"imageId\": \"\",\n      \"secretName\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"OvirtVolumePopulator\",\n    \"metadata\": {\n      \"name\": \"example-ovirt-imageio\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"diskId\": \"\",\n      \"engineSecretName\": \"\",\n      \"engineUrl\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Plan\",\n    \"metadata\": {\n      \"name\": \"example-plan\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"provider\": {\n        \"destination\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        },\n        \"source\": {\n          \"name\": \"\",\n          \"namespace\": \"\"\n        }\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"Provider\",\n    \"metadata\": {\n      \"name\": \"example-provider\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"secret\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      },\n      \"type\": \"vmware\",\n      \"url\": \"\"\n    }\n  },\n  {\n    \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n    \"kind\": \"StorageMap\",\n    \"metadata\": {\n      \"name\": \"example-storagemap\",\n      \"namespace\": \"openshift-mtv\"\n    },\n    \"spec\": {\n      \"map\": [\n        {\n          \"destination\": {\n            \"storageClass\": \"\"\n          },\n          \"source\": {\n            \"id\": \"\"\n          }\n        }\n      ],\n      \"provider\": {\n        \"name\": \"\",\n        \"namespace\": \"\"\n      }\n    }\n  }\n]",
+                    "capabilities": "Seamless Upgrades",
+                    "categories": "OpenShift Optional",
+                    "certified": "true",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:882cf7d237ca58fa2f21f40c699d522bbb1f9b98ce1699449d943c0dbb6caeaf",
+                    "createdAt": "2025-07-09T12:26:28Z",
+                    "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
+                    "features.operators.openshift.io/cnf": "false",
+                    "features.operators.openshift.io/cni": "false",
+                    "features.operators.openshift.io/csi": "false",
+                    "features.operators.openshift.io/disconnected": "false",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/fipsmode": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "operatorframework.io/initialization-resource": "{\n  \"apiVersion\": \"forklift.konveyor.io/v1beta1\",\n  \"kind\": \"ForkliftController\",\n  \"metadata\": {\n    \"name\": \"forklift-controller\",\n    \"namespace\": \"openshift-mtv\"\n  },\n  \"spec\": {\n    \"feature_ui_plugin\": \"true\",\n    \"feature_validation\": \"true\",\n    \"feature_volume_populator\": \"true\"\n  }\n}",
+                    "operatorframework.io/suggested-namespace": "openshift-mtv",
+                    "operators.openshift.io/valid-subscription": "[\"OpenShift Kubernetes Engine\", \"OpenShift Container Platform\", \"OpenShift Platform Plus\"]",
+                    "operators.operatorframework.io/builder": "operator-sdk-v1.38.0-ocp",
+                    "operators.operatorframework.io/project_layout": "ansible.sdk.operatorframework.io/v1",
+                    "repository": "https://github.com/kubev2v/forklift",
+                    "support": "Red Hat"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "forkliftcontrollers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "ForkliftController",
+                            "displayName": "ForkliftController",
+                            "description": "VM migration controller"
+                        },
+                        {
+                            "name": "hooks.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Hook",
+                            "displayName": "Hook",
+                            "description": "Hook schema for the hooks API"
+                        },
+                        {
+                            "name": "hosts.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Host",
+                            "displayName": "Host",
+                            "description": "VM host"
+                        },
+                        {
+                            "name": "migrations.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Migration",
+                            "displayName": "Migration",
+                            "description": "VM migration"
+                        },
+                        {
+                            "name": "networkmaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "NetworkMap",
+                            "displayName": "NetworkMap",
+                            "description": "VM network map"
+                        },
+                        {
+                            "name": "openstackvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OpenstackVolumePopulator",
+                            "displayName": "OpenstackVolumePopulator",
+                            "description": "OpenStack Volume Populator"
+                        },
+                        {
+                            "name": "ovirtvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "OvirtVolumePopulator",
+                            "displayName": "OvirtVolumePopulator",
+                            "description": "oVirt Volume Populator"
+                        },
+                        {
+                            "name": "plans.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Plan",
+                            "displayName": "Plan",
+                            "description": "VM migration plan"
+                        },
+                        {
+                            "name": "providers.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "Provider",
+                            "displayName": "Provider",
+                            "description": "VM provider"
+                        },
+                        {
+                            "name": "storagemaps.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "StorageMap",
+                            "displayName": "StorageMap",
+                            "description": "VM storage map"
+                        },
+                        {
+                            "name": "vspherexcopyvolumepopulators.forklift.konveyor.io",
+                            "version": "v1beta1",
+                            "kind": "VSphereXcopyVolumePopulator",
+                            "displayName": "VSphereXcopyVolumePopulator",
+                            "description": "VSphere Xcopy Volume Populator"
+                        }
+                    ]
+                },
+                "description": "The Migration Toolkit for Virtualization Operator manages the deployment and life cycle of Migration Toolkit for Virtualization on [OpenShift](https://www.openshift.com/) Container Platform.\n\n### Installation\n\nOpenShift Virtualization must be installed on an OpenShift migration target cluster before you can use MTV to transfer any VMs to that cluster\n\nOnce you have successfully installed the Operator, proceed to deploy components by creating the required ForkliftController CR.\n\nBy default, the Operator installs the following components on a target cluster:\n\n* Controller, to coordinate migration processes.\n* UI, the web console to manage migrations.\n* Validation, a service to validate migration workflows.\n\n### Compatibility\n\nMigration Toolkit for Virtualization 2.8 is supported on OpenShift 4.16, 4.17 and 4.18\n\nMigration Toolkit for Virtualization 2.9 is supported on OpenShift 4.17, 4.18 and 4.19\n\nMore information on compatibility in the [MTV Lifecycle document](https://access.redhat.com/support/policy/updates/migration-toolkit-for-virtualization).\n\n### Documentation\nDocumentation can be found on the [Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization/).\n\n### Getting help\nIf you encounter any issues while using Migration Toolkit for Virtualization Operator, create a [support case](https://access.redhat.com/support/cases/) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Creating a case in the [Red Hat Customer Portal](https://access.redhat.com/support/cases/) with any issues you find using Migration Toolkit for Application and its Operator.\n* Fixing issues by opening Pull Requests in the [KubeV2V](https://github.com/kubev2v/) under Forklift Projects.\n* Improving Forklift upstream [documentation](https://github.com/kubev2v/forklift-documentation/).\n",
+                "displayName": "Migration Toolkit for Virtualization Operator",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": false
+                    }
+                ],
+                "keywords": [
+                    "migration",
+                    "forklift",
+                    "konveyor",
+                    "mtv"
+                ],
+                "links": [
+                    {
+                        "name": "Migration Toolkit for Virtualization Documentation",
+                        "url": "https://access.redhat.com/documentation/en-us/migration_toolkit_for_virtualization"
+                    },
+                    {
+                        "name": "Forklift Operator",
+                        "url": "https://github.com/kubev2v/forklift"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Red Hat",
+                        "email": "openshift-operators@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "minKubeVersion": "1.27.0",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:e957f6701d9ed836fe0b0160d2df1a1370c276f977f5ad77718392c5fbb7cf1d"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:882cf7d237ca58fa2f21f40c699d522bbb1f9b98ce1699449d943c0dbb6caeaf"
+        }
+    ]
+}
