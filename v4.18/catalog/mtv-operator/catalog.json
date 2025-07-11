@@ -80,7 +80,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.0",
     "package": "mtv-operator",
-    "image": "registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:fe0027d45225ac6b321d06262b8ae5f6327fde842abd3889bd7ae1af90027c36",
+    "image": "registry.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:fe0027d45225ac6b321d06262b8ae5f6327fde842abd3889bd7ae1af90027c36",
     "properties": [
         {
             "type": "olm.gvk",
@@ -342,11 +342,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/mtv-candidate/mtv-rhel9-operator@sha256:11840027b9097cbd172ec56c7217eac7aafca15e95720e902899c09b563228c0"
+            "image": "registry.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:fe0027d45225ac6b321d06262b8ae5f6327fde842abd3889bd7ae1af90027c36"
         },
         {
             "name": "",
-            "image": "registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:fe0027d45225ac6b321d06262b8ae5f6327fde842abd3889bd7ae1af90027c36"
+            "image": "registry.redhat.io/mtv-candidate/mtv-rhel9-operator@sha256:11840027b9097cbd172ec56c7217eac7aafca15e95720e902899c09b563228c0"
         }
     ]
 }
