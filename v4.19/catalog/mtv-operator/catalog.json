@@ -1225,7 +1225,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.9.2",
     "package": "mtv-operator",
-    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9:2069d3c2c53cdf52f418d45d8540b96573103d54",
+    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9@sha256:fcfc2618aacd221410a0aa8c7bdcd3395fe3aedba81c603607e905a1841082bb",
     "properties": [
         {
             "type": "olm.gvk",
@@ -1331,7 +1331,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:ec2310a59d6b55783190f5a3511fd43011e38e3be262e8b875051d586fb9f2fa",
-                    "createdAt": "2025-08-05T03:44:10Z",
+                    "createdAt": "2025-08-05T15:26:49Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -1487,7 +1487,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9:2069d3c2c53cdf52f418d45d8540b96573103d54"
+            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9@sha256:fcfc2618aacd221410a0aa8c7bdcd3395fe3aedba81c603607e905a1841082bb"
         },
         {
             "name": "api",
@@ -1535,7 +1535,7 @@
         },
         {
             "name": "vsphere_xcopy_volume_populator",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:6fbaa3c746ecbd2de2079d85f716d2cfce087c4beff400bead6e04352bae5fce"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:d54c5a65bb25af3e81fac9708407ae7a5cc4aa3e1d0b3c719481305a8c184ba9"
         }
     ]
 }
