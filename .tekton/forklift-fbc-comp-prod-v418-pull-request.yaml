@@ -25,7 +25,7 @@ spec:
   - name: output-image
     value: quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-fbc-prod-v418:on-pr-{{revision}}
   - name: image-expires-after
-    value: 5d
+    value: 2w
   - name: build-platforms
     value:
     - linux/x86_64
