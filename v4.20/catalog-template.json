@@ -1,44 +1,59 @@
 {
-    "schema": "olm.template.basic",
-    "entries": [
+  "schema": "olm.template.basic",
+  "entries": [
+    {
+      "defaultChannel": "release-v2.8",
+      "icon": {
+        "base64data": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTAwO308L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjgsMi4yNUE3Ljc1ODcsNy43NTg3LDAsMCwxLDM1Ljc1LDEwVjI4QTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMjgsMzUuNzVIMTBBNy43NTg3LDcuNzU4NywwLDAsMSwyLjI1LDI4VjEwQTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMTAsMi4yNUgyOE0yOCwxSDEwYTksOSwwLDAsMC05LDlWMjhhOSw5LDAsMCwwLDksOUgyOGE5LDksMCwwLDAsOS05VjEwYTksOSwwLDAsMC05LTlaIi8+PHBhdGggZD0iTTI3LDE1LjkxMzFIMTYuODE3OGwuNzc4OS0uNzc4M2EuNjI1Ni42MjU2LDAsMSwwLS44ODQ4LS44ODQ4bC0xLjg0NjcsMS44NDY3YS42MjU5LjYyNTksMCwwLDAsLjAwMS44ODQ3bDEuODQ2NywxLjg0NTdhLjYyNDkuNjI0OSwwLDEsMCwuODgyOC0uODg0N2wtLjc4LS43NzkzSDI2LjM3NVYyNi4zNzVIMTcuMTYzMVYyNC44OWEuNjI1LjYyNSwwLDAsMC0xLjI1LDBWMjdhLjYyNTYuNjI1NiwwLDAsMCwuNjI1LjYyNUgyN0EuNjI1Ni42MjU2LDAsMCwwLDI3LjYyNSwyN1YxNi41MzgxQS42MjU2LjYyNTYsMCwwLDAsMjcsMTUuOTEzMVoiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzLjEzMzgsMjEuMDE4NmwtMS44NDY3LTEuODQ1N2EuNjI0OS42MjQ5LDAsMSwwLS44ODI4Ljg4NDdsLjc4Ljc3OTNIMTEuNjI1VjExLjYyNWg5LjIxMTlWMTMuMTFhLjYyNS42MjUsMCwwLDAsMS4yNSwwVjExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS0uNjI1SDExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS42MjVWMjEuNDYxOWEuNjI1Ni42MjU2LDAsMCwwLC42MjUuNjI1SDIxLjE4MjJsLS43Nzg5Ljc3ODNhLjYyNTYuNjI1NiwwLDAsMCwuODg0OC44ODQ4bDEuODQ2Ny0xLjg0NjdhLjYyNTkuNjI1OSwwLDAsMC0uMDAxLS44ODQ3WiIvPjwvc3ZnPg==",
+        "mediatype": "image/svg+xml"
+      },
+      "name": "mtv-operator",
+      "schema": "olm.package"
+    },
+    {
+      "entries": [
         {
-            "defaultChannel": "release-v2.8",
-            "icon": {
-                "base64data": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTAwO308L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMjgsMi4yNUE3Ljc1ODcsNy43NTg3LDAsMCwxLDM1Ljc1LDEwVjI4QTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMjgsMzUuNzVIMTBBNy43NTg3LDcuNzU4NywwLDAsMSwyLjI1LDI4VjEwQTcuNzU4Nyw3Ljc1ODcsMCwwLDEsMTAsMi4yNUgyOE0yOCwxSDEwYTksOSwwLDAsMC05LDlWMjhhOSw5LDAsMCwwLDksOUgyOGE5LDksMCwwLDAsOS05VjEwYTksOSwwLDAsMC05LTlaIi8+PHBhdGggZD0iTTI3LDE1LjkxMzFIMTYuODE3OGwuNzc4OS0uNzc4M2EuNjI1Ni42MjU2LDAsMSwwLS44ODQ4LS44ODQ4bC0xLjg0NjcsMS44NDY3YS42MjU5LjYyNTksMCwwLDAsLjAwMS44ODQ3bDEuODQ2NywxLjg0NTdhLjYyNDkuNjI0OSwwLDEsMCwuODgyOC0uODg0N2wtLjc4LS43NzkzSDI2LjM3NVYyNi4zNzVIMTcuMTYzMVYyNC44OWEuNjI1LjYyNSwwLDAsMC0xLjI1LDBWMjdhLjYyNTYuNjI1NiwwLDAsMCwuNjI1LjYyNUgyN0EuNjI1Ni42MjU2LDAsMCwwLDI3LjYyNSwyN1YxNi41MzgxQS42MjU2LjYyNTYsMCwwLDAsMjcsMTUuOTEzMVoiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzLjEzMzgsMjEuMDE4NmwtMS44NDY3LTEuODQ1N2EuNjI0OS42MjQ5LDAsMSwwLS44ODI4Ljg4NDdsLjc4Ljc3OTNIMTEuNjI1VjExLjYyNWg5LjIxMTlWMTMuMTFhLjYyNS42MjUsMCwwLDAsMS4yNSwwVjExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS0uNjI1SDExYS42MjU2LjYyNTYsMCwwLDAtLjYyNS42MjVWMjEuNDYxOWEuNjI1Ni42MjU2LDAsMCwwLC42MjUuNjI1SDIxLjE4MjJsLS43Nzg5Ljc3ODNhLjYyNTYuNjI1NiwwLDAsMCwuODg0OC44ODQ4bDEuODQ2Ny0xLjg0NjdhLjYyNTkuNjI1OSwwLDAsMC0uMDAxLS44ODQ3WiIvPjwvc3ZnPg==",
-                "mediatype": "image/svg+xml"
-            },
-            "name": "mtv-operator",
-            "schema": "olm.package"
-        },
-        {
-            "entries": [
-                {
-                    "name": "mtv-operator.v2.7.2",
-                    "skipRange": "\u003e=0.0.0 \u003c2.7.2"
-                }
-            ],
-            "name": "release-v2.7",
-            "package": "mtv-operator",
-            "schema": "olm.channel"
-        },
-        {
-            "entries": [
-                {
-                    "name": "mtv-operator.v2.8.5",
-                    "skipRange": "\u003e=0.0.0 \u003c2.8.5"
-                }
-            ],
-            "name": "release-v2.8",
-            "package": "mtv-operator",
-            "schema": "olm.channel"
-        },
-        {
-            "schema": "olm.bundle",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:365115407964d182de7e7564438c6fd089e2c0bcc0f94ec48621ca0cc2bf0fe4"
-        },
-        {
-            "schema": "olm.bundle",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:29ce66f04b7339725d0e3dd7d4cfeca794c33e917e0deef00c44149a86a1c3b9"
+          "name": "mtv-operator.v2.7.2",
+          "skipRange": ">=0.0.0 <2.7.2"
         }
-    ]
+      ],
+      "name": "release-v2.7",
+      "package": "mtv-operator",
+      "schema": "olm.channel"
+    },
+    {
+      "entries": [
+        {
+          "name": "mtv-operator.v2.8.5",
+          "skipRange": ">=0.0.0 <2.8.5"
+        }
+      ],
+      "name": "release-v2.8",
+      "package": "mtv-operator",
+      "schema": "olm.channel"
+    },
+    {
+      "schema": "olm.bundle",
+      "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:365115407964d182de7e7564438c6fd089e2c0bcc0f94ec48621ca0cc2bf0fe4"
+    },
+    {
+      "schema": "olm.bundle",
+      "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:29ce66f04b7339725d0e3dd7d4cfeca794c33e917e0deef00c44149a86a1c3b9"
+    },
+    {
+      "entries": [
+        {
+          "name": "mtv-operator.v2.10.0",
+          "skipRange": ">=0.0.0 <2.10.0"
+        }
+      ],
+      "name": "dev-preview",
+      "package": "mtv-operator",
+      "schema": "olm.channel"
+    },
+    {
+      "schema": "olm.bundle",
+      "image": "registry.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:6809cbbd1b9759a9626a9b15bd3eb2fcb2f985d006b12c83a482006dd36c0039"
+    }
+  ]
 }
