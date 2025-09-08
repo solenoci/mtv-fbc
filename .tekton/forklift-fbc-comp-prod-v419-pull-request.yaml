@@ -9,7 +9,8 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "main"
+      == "main" && ( "v4.19/***".pathChanged() || ".tekton/forklift-fbc-comp-prod-v419-pull-request.yaml".pathChanged()
+      || "v4.19/catalog.Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: forklift-fbc-prod-v419
@@ -104,14 +105,6 @@ spec:
       description: Add built image into an OCI image index
       name: build-image-index
       type: string
-    - default: []
-      description: Array of --build-arg values ("arg=value" strings) for buildah
-      name: build-args
-      type: array
-    - default: ""
-      description: Path to a file with build arguments for buildah, see https://www.mankier.com/1/buildah-build#--build-arg-file
-      name: build-args-file
-      type: string
     - default:
       - linux/x86_64
       description: List of platforms to build the container images on. The available
@@ -204,6 +197,22 @@ spec:
         workspace: git-auth
       - name: netrc
         workspace: netrc
+    - name: generate-labels
+      params:
+      - name: label-templates
+        value:
+        - "mtv-version=v{{body.pull_request.title}}"
+      runAfter:
+      - clone-repository
+      taskRef:
+        params:
+        - name: name
+          value: generate-labels
+        - name: bundle
+          value: quay.io/konflux-ci/tekton-catalog/task-generate-labels:0.1@sha256:0068fe8b3c5d010daee5a922781a74cfb82251e775c260d14d9e50dd1a7aca65
+        - name: kind
+          value: task
+        resolver: bundles
     - matrix:
         params:
         - name: PLATFORM
@@ -225,11 +234,8 @@ spec:
         value: $(params.image-expires-after)
       - name: COMMIT_SHA
         value: $(tasks.clone-repository.results.commit)
-      - name: BUILD_ARGS
-        value:
-        - $(params.build-args[*])
-      - name: BUILD_ARGS_FILE
-        value: $(params.build-args-file)
+      - name: LABELS
+        value: $(tasks.generate-labels.results.LABELS)
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
@@ -238,6 +244,7 @@ spec:
         value: "true"
       runAfter:
       - clone-repository
+      - generate-labels
       taskRef:
         params:
         - name: name
