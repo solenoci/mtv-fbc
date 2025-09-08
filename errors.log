@@ -1,0 +1,33 @@
++ source opm_utils.sh
+++ DEFAULT_OPM_VERSION=v1.47.0
+++ OPM_VERSION=v1.47.0
++ package_name=mtv-operator
++ cmd=--init
++ case $cmd in
++ frag=v4.20
++ '[' -z v4.20 ']'
++ mkdir -p v4.20/catalog/mtv-operator/
++ dockerfile v4.20
++ suffix=-rhel9
++ [[ v4.20 =~ ^v4.1(1|2|3|4)$ ]]
++ cat
+++ grep FROM v4.20/catalog.Dockerfile
++ FROMV='FROM registry.redhat.io/openshift4/ose-operator-registry-rhel9:v4.20'
++ OCPV=v4.20
++ from=registry.redhat.io/redhat/redhat-operator-index:v4.20
+++ opm_alpha_params v4.20
+++ params=
+++ [[ ! v4.20 < v4.17 ]]
+++ params=--migrate-level=bundle-object-to-csv-metadata
+++ echo --migrate-level=bundle-object-to-csv-metadata
++ ./opm migrate --migrate-level=bundle-object-to-csv-metadata registry.redhat.io/redhat/redhat-operator-index:v4.20 ./catalog-migrate-v4.20
+time="2025-09-08T11:13:05+02:00" level=info msg="rendering index \"registry.redhat.io/redhat/redhat-operator-index:v4.20\" as file-based catalog"
+time="2025-09-08T11:13:56+02:00" level=info msg="wrote rendered file-based catalog to \"./catalog-migrate-v4.20\"\n"
++ ./opm alpha convert-template basic ./catalog-migrate-v4.20/mtv-operator/catalog.json
+++ opm_alpha_params v4.20
+++ params=
+++ [[ ! v4.20 < v4.17 ]]
+++ params=--migrate-level=bundle-object-to-csv-metadata
+++ echo --migrate-level=bundle-object-to-csv-metadata
++ ./opm alpha render-template basic --migrate-level=bundle-object-to-csv-metadata v4.20/catalog-template.json
++ rm -rf ./catalog-migrate-v4.20
