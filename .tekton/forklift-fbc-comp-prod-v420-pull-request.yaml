@@ -201,7 +201,7 @@ spec:
       params:
       - name: label-templates
         value:
-        - "mtv-version=v{{body.pull_request.title}}"
+        - "mtv-version=v{{body.head_commit.message}}"
       runAfter:
       - clone-repository
       taskRef:
