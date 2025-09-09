@@ -1871,7 +1871,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.9.4",
     "package": "mtv-operator",
-    "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:94f6fcd7d9319d247136e6259dc414c490a3a6e6a7de7bb3cd594f772716de34",
+    "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:36c1ebe9f3a478fc8bae8eda76b449f5c5dd9548deb9cc660b501bc99623e696",
     "properties": [
         {
             "type": "olm.gvk",
@@ -1977,7 +1977,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:71d94260c96f606de8d875624a95620387549a9979daef1ba24078ad226cac9c",
-                    "createdAt": "2025-09-08T14:13:09Z",
+                    "createdAt": "2025-09-08T21:11:29Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -2137,7 +2137,7 @@
         },
         {
             "name": "ui_plugin",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:2167ad9b66d2909e5f793253f3090f8a67b0945a823d096b10becc7bb661875f"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:8bdd65389340829bf5fe98010c7b725081ea46b05034f5c89d10c022e847d054"
         },
         {
             "name": "controller",
@@ -2181,7 +2181,7 @@
         },
         {
             "name": "",
-            "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:94f6fcd7d9319d247136e6259dc414c490a3a6e6a7de7bb3cd594f772716de34"
+            "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:36c1ebe9f3a478fc8bae8eda76b449f5c5dd9548deb9cc660b501bc99623e696"
         }
     ]
 }
