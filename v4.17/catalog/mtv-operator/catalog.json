@@ -7091,7 +7091,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.9.4",
     "package": "mtv-operator",
-    "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:c710fdeb8fb0f73f19719dc938fa84f97029894f1709fcfd21223078bbdec1ea",
+    "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:94f6fcd7d9319d247136e6259dc414c490a3a6e6a7de7bb3cd594f772716de34",
     "properties": [
         {
             "type": "olm.gvk",
@@ -7197,7 +7197,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:71d94260c96f606de8d875624a95620387549a9979daef1ba24078ad226cac9c",
-                    "createdAt": "2025-09-03T15:15:40Z",
+                    "createdAt": "2025-09-08T14:13:09Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -7397,11 +7397,11 @@
         },
         {
             "name": "vsphere_xcopy_volume_populator",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:a7a8c22dc1eb296a3e43eb719999024905b9761bebea1d6e91206cd022bd5685"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9@sha256:30413dcc4d626801971455d6ff40acedf68616c7c36d70a377f84c468ce64c1e"
         },
         {
             "name": "",
-            "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:c710fdeb8fb0f73f19719dc938fa84f97029894f1709fcfd21223078bbdec1ea"
+            "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:94f6fcd7d9319d247136e6259dc414c490a3a6e6a7de7bb3cd594f772716de34"
         }
     ]
 }
