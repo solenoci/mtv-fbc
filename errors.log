@@ -21,8 +21,8 @@
 ++ params=--migrate-level=bundle-object-to-csv-metadata
 ++ echo --migrate-level=bundle-object-to-csv-metadata
 + ./opm migrate --migrate-level=bundle-object-to-csv-metadata registry.redhat.io/redhat/redhat-operator-index:v4.20 ./catalog-migrate-v4.20
-time="2025-09-08T11:13:05+02:00" level=info msg="rendering index \"registry.redhat.io/redhat/redhat-operator-index:v4.20\" as file-based catalog"
-time="2025-09-08T11:13:56+02:00" level=info msg="wrote rendered file-based catalog to \"./catalog-migrate-v4.20\"\n"
+time="2025-09-09T16:43:01+02:00" level=info msg="rendering index \"registry.redhat.io/redhat/redhat-operator-index:v4.20\" as file-based catalog"
+time="2025-09-09T16:43:52+02:00" level=info msg="wrote rendered file-based catalog to \"./catalog-migrate-v4.20\"\n"
 + ./opm alpha convert-template basic ./catalog-migrate-v4.20/mtv-operator/catalog.json
 ++ opm_alpha_params v4.20
 ++ params=
