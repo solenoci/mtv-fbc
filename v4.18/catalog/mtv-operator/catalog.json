@@ -9,7 +9,7 @@
 }
 {
     "schema": "olm.channel",
-    "name": "dev-preview",
+    "name": "release-v2.10",
     "package": "mtv-operator",
     "entries": [
         {
@@ -110,7 +110,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.0",
     "package": "mtv-operator",
-    "image": "registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:9430cd8911f2c13748cc8edbd55be5a44e858429858536b8671ebc290ff9ac6d",
+    "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:f99edd44b5cedb0d72cf9e73ccc74f771ee10d4336c31d659220848937c9846a",
     "properties": [
         {
             "type": "olm.gvk",
@@ -215,8 +215,8 @@
                     "capabilities": "Seamless Upgrades",
                     "categories": "OpenShift Optional",
                     "certified": "true",
-                    "containerImage": "registry.redhat.io/mtv-candidate/mtv-rhel9-operator@sha256:306832877ac80c6a19e858c1a38a60437fb8be3754920f02f493743bd7fae7f1",
-                    "createdAt": "2025-09-29T18:16:55Z",
+                    "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:4e28772a1f700741ff3ca7803735f99fb2230a7e93ddaad9f083c17479422893",
+                    "createdAt": "2025-10-02T19:03:47Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -372,11 +372,11 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "registry.redhat.io/mtv-candidate/mtv-rhel9-operator@sha256:306832877ac80c6a19e858c1a38a60437fb8be3754920f02f493743bd7fae7f1"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:4e28772a1f700741ff3ca7803735f99fb2230a7e93ddaad9f083c17479422893"
         },
         {
             "name": "",
-            "image": "registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle@sha256:9430cd8911f2c13748cc8edbd55be5a44e858429858536b8671ebc290ff9ac6d"
+            "image": "registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:f99edd44b5cedb0d72cf9e73ccc74f771ee10d4336c31d659220848937c9846a"
         }
     ]
 }
