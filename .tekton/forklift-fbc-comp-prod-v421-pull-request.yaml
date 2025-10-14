@@ -8,7 +8,7 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "main" && ( "v4.20/***".pathChanged() || ".tekton/forklift-fbc-comp-prod-v420-pull-request.yaml".pathChanged() || "v4.20/catalog.Dockerfile".pathChanged() )
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "main" && ( "v4.21/***".pathChanged() || ".tekton/forklift-fbc-comp-prod-v421-pull-request.yaml".pathChanged() || "v4.21/catalog.Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: forklift-fbc-prod-v421
