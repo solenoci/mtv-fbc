@@ -371,7 +371,7 @@ spec:
         - name: name
           value: fbc-target-index-pruning-check
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-fbc-target-index-pruning-check:0.1@sha256:6f1d1edb746a7b20ad4fe523344c5515a259403b8314f5208d96ea0c6ec06169
+          value: quay.io/konflux-ci/tekton-catalog/task-fbc-target-index-pruning-check:0.1@sha256:cd86fe953ff59f0bebd1180669d83ca89b46cf6af4edce5794807e488ca661ef
         - name: kind
           value: task
         resolver: bundles
