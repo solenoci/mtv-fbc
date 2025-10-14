@@ -57,6 +57,11 @@
           "name": "mtv-operator.v2.9.4",
           "replaces": "mtv-operator.v2.9.3",
           "skipRange": ">=0.0.0 <2.9.4"
+        },
+        {
+          "name": "mtv-operator.v2.9.5",
+          "replaces": "mtv-operator.v2.9.4",
+          "skipRange": ">=0.0.0 <2.9.5"
         }
       ],
       "name": "release-v2.9",
@@ -90,6 +95,10 @@
     {
       "schema": "olm.bundle",
       "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:ad3b548405e8c4c075ef7d4c0eb0d0430684066ed7eab4563a1f8378eaf3d939"
+    },
+    {
+      "schema": "olm.bundle",
+      "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:7e884facf0b76579b6d8ce867ac0b12a7d7824a5cf5f809daf5998c3a7b9db9c"
     }
   ]
 }
