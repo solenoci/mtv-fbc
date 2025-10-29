@@ -44,7 +44,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.0",
     "package": "mtv-operator",
-    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:fd7b1bf471ddc76420667be11a5e6759d128b57c2d3106d55b2ab7e36d2c157d",
+    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:90901a96e919c8c3fd33adb96b4b8caba2e6478bb54d16ce5b297c9d0fa18644",
     "properties": [
         {
             "type": "olm.gvk",
@@ -158,7 +158,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:17b92ea0f5d110444da7cfe5bddb96724c6e00976ab58ba2f34ce9fd2661539b",
-                    "createdAt": "2025-10-29T12:16:19Z",
+                    "createdAt": "2025-10-29T13:52:06Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -1084,7 +1084,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:fd7b1bf471ddc76420667be11a5e6759d128b57c2d3106d55b2ab7e36d2c157d"
+            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:90901a96e919c8c3fd33adb96b4b8caba2e6478bb54d16ce5b297c9d0fa18644"
         },
         {
             "name": "",
