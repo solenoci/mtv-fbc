@@ -14,7 +14,7 @@
       "entries": [
         {
           "name": "mtv-operator.v2.7.2",
-          "skipRange": ">=0.0.0 <2.7.2"
+          "skipRange": "\u003e=0.0.0 \u003c2.7.2"
         }
       ],
       "name": "release-v2.7",
@@ -25,7 +25,7 @@
       "entries": [
         {
           "name": "mtv-operator.v2.8.5",
-          "skipRange": ">=0.0.0 <2.8.5"
+          "skipRange": "\u003e=0.0.0 \u003c2.8.5"
         }
       ],
       "name": "release-v2.8",
@@ -36,32 +36,32 @@
       "entries": [
         {
           "name": "mtv-operator.v2.9.0",
-          "skipRange": ">=0.0.0 <2.9.0"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.0"
         },
         {
           "name": "mtv-operator.v2.9.1",
           "replaces": "mtv-operator.v2.9.0",
-          "skipRange": ">=0.0.0 <2.9.1"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.1"
         },
         {
           "name": "mtv-operator.v2.9.2",
           "replaces": "mtv-operator.v2.9.1",
-          "skipRange": ">=0.0.0 <2.9.2"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.2"
         },
         {
           "name": "mtv-operator.v2.9.3",
           "replaces": "mtv-operator.v2.9.2",
-          "skipRange": ">=0.0.0 <2.9.3"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.3"
         },
         {
           "name": "mtv-operator.v2.9.4",
           "replaces": "mtv-operator.v2.9.3",
-          "skipRange": ">=0.0.0 <2.9.4"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.4"
         },
         {
           "name": "mtv-operator.v2.9.5",
           "replaces": "mtv-operator.v2.9.4",
-          "skipRange": ">=0.0.0 <2.9.5"
+          "skipRange": "\u003e=0.0.0 \u003c2.9.5"
         }
       ],
       "name": "release-v2.9",
