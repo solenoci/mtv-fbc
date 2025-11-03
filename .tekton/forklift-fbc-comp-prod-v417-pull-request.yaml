@@ -8,7 +8,7 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: 'true'
     pipelinesascode.tekton.dev/max-keep-runs: '3'
-    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "main"
+    pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch == "main" && ( "v4.17/***".pathChanged() || ".tekton/forklift-fbc-comp-prod-v417-pull-request.yaml".pathChanged() || "v4.17/catalog.Dockerfile".pathChanged() )
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: forklift-fbc-prod-v417
@@ -99,19 +99,15 @@ spec:
       description: Add built image into an OCI image index
       name: build-image-index
       type: string
-    - default: []
-      description: Array of --build-arg values ("arg=value" strings) for buildah
-      name: build-args
-      type: array
-    - default: ''
-      description: Path to a file with build arguments for buildah, see https://www.mankier.com/1/buildah-build#--build-arg-file
-      name: build-args-file
-      type: string
     - default:
       - linux/x86_64
       description: List of platforms to build the container images on. The available set of values is determined by the configuration of the multi-platform-controller.
       name: build-platforms
       type: array
+    - name: buildah-format
+      default: oci
+      type: string
+      description: The format for the resulting image's mediaType. Valid values are oci or docker.
     results:
     - description: ''
       name: IMAGE_URL
@@ -198,6 +194,22 @@ spec:
         workspace: git-auth
       - name: netrc
         workspace: netrc
+    - name: generate-labels
+      params:
+      - name: label-templates
+        value:
+        - "mtv-version=v{{body.pull_request.title}}"
+      runAfter:
+      - clone-repository
+      taskRef:
+        params:
+        - name: name
+          value: generate-labels
+        - name: bundle
+          value: quay.io/konflux-ci/tekton-catalog/task-generate-labels:0.1@sha256:e1f50f745a29e96035ee3de0106f40fd0b1ccd18492d9e8d16dd19603e9fa2c8
+        - name: kind
+          value: task
+        resolver: bundles
     - matrix:
         params:
         - name: PLATFORM
@@ -219,19 +231,19 @@ spec:
         value: $(params.image-expires-after)
       - name: COMMIT_SHA
         value: $(tasks.clone-repository.results.commit)
-      - name: BUILD_ARGS
-        value:
-        - $(params.build-args[*])
-      - name: BUILD_ARGS_FILE
-        value: $(params.build-args-file)
+      - name: LABELS
+        value: $(tasks.generate-labels.results.labels[*])
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
       - name: IMAGE_APPEND_PLATFORM
         value: 'true'
+      - name: BUILDAH_FORMAT
+        value: $(params.buildah-format)
       runAfter:
       - clone-repository
+      - generate-labels
       taskRef:
         params:
         - name: name
@@ -259,6 +271,8 @@ spec:
       - name: IMAGES
         value:
         - $(tasks.build-images.results.IMAGE_REF[*])
+      - name: BUILDAH_FORMAT
+        value: $(params.buildah-format)
       runAfter:
       - build-images
       taskRef:
