@@ -1101,7 +1101,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.1",
     "package": "mtv-operator",
-    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:4a294ace0c59cfb6b4b803e07414cb2d0fbe27811fd2c50fb6ba779ffc922dd8",
+    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:d11027d582bdfc4eb758fb7b9103913f1541f0dd7cd0fa5dd1488fffcd0dfe97",
     "properties": [
         {
             "type": "olm.gvk",
@@ -1215,7 +1215,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:d9b943395fb9a623ccfd6fea0aefa7470c2ede6a0064936891c4a5cb19665e67",
-                    "createdAt": "2025-11-19T13:09:53Z",
+                    "createdAt": "2025-11-24T15:55:42Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -2141,7 +2141,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:4a294ace0c59cfb6b4b803e07414cb2d0fbe27811fd2c50fb6ba779ffc922dd8"
+            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:d11027d582bdfc4eb758fb7b9103913f1541f0dd7cd0fa5dd1488fffcd0dfe97"
         },
         {
             "name": "api",
@@ -2193,7 +2193,7 @@
         },
         {
             "name": "virt_v2v",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel10@sha256:f666469d0d39368c743ab5410a87b6fed4a48280d6510f47501cde1e6c83a505"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel10@sha256:7e762ff7adce02737d25ca59534fe411d91ef8d7e5136b14149b959bed2f45a8"
         },
         {
             "name": "vsphere_xcopy_volume_populator",
