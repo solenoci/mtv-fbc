@@ -7,236 +7,309 @@ spec:
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-controller-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-api-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-api-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-api-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-must-gather-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-must-gather-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-must-gather-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-console-plugin-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-console-plugin-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-console-plugin-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/validation-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/validation-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/validation-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/virt-v2v-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/virt-v2v-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/virt-v2v-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9
     - mirrors:
+        - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-10/virt-v2v-int-2-10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-dev-preview/virt-v2v-int-dev-preview
+      source: registry.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel10
+    - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/populator-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/populator-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/populator-controller-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ovirt-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ovirt-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ovirt-populator-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/openstack-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/openstack-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/openstack-populator-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ova-provider-server-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ova-provider-server-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ova-provider-server-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/vsphere-xcopy-volume-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/vsphere-xcopy-volume-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/vsphere-xcopy-volume-populator-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator
     - mirrors:
         - registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-bundle-dev-preview
       source: registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-controller-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-controller-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-controller-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-api-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-api-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-api-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-api-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-api-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-must-gather-rhel8
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-must-gather-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-must-gather-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-must-gather-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-must-gather-rhel8
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-console-plugin-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-console-plugin-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-console-plugin-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-console-plugin-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-console-plugin-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-validation-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/validation-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/validation-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/validation-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-validation-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-virt-v2v-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/virt-v2v-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/virt-v2v-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/virt-v2v-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-virt-v2v-rhel9
     - mirrors:
+        - registry.stage.redhat.io/mtv-candidate/mtv-virt-v2v-rhel10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-9/virt-v2v-int-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-10/virt-v2v-int-2-10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-dev-preview/virt-v2v-int-dev-preview
+      source: registry.redhat.io/mtv-candidate/mtv-virt-v2v-rhel10
+    - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-populator-controller-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/populator-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/populator-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/populator-controller-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-populator-controller-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-rhv-populator-rhel8
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ovirt-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ovirt-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ovirt-populator-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-rhv-populator-rhel8
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-openstack-populator-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/openstack-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/openstack-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/openstack-populator-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-openstack-populator-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-ova-provider-server-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ova-provider-server-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ova-provider-server-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ova-provider-server-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-ova-provider-server-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-vsphere-xcopy-volume-populator-rhel9
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/vsphere-xcopy-volume-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/vsphere-xcopy-volume-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/vsphere-xcopy-volume-populator-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-vsphere-xcopy-volume-populator-rhel9
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-rhel9-operator
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-rhel9-operator
     - mirrors:
         - registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-bundle-dev-preview
       source: registry.redhat.io/mtv-candidate/mtv-operator-bundle
 
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-controller-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-controller-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-api-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-api-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-api-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-must-gather-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-must-gather-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-must-gather-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-must-gather-rhel8
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-console-plugin-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-console-plugin-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-console-plugin-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/validation-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/validation-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/validation-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-validation-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/virt-v2v-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/virt-v2v-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/virt-v2v-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel9
     - mirrors:
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-9/virt-v2v-int-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-10/virt-v2v-int-2-10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-dev-preview/virt-v2v-int-dev-preview
+      source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-virt-v2v-rhel10
+    - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/populator-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/populator-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/populator-controller-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-populator-controller-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ovirt-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ovirt-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ovirt-populator-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-rhv-populator-rhel8
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/openstack-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/openstack-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/openstack-populator-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ova-provider-server-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ova-provider-server-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ova-provider-server-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-ova-provider-server-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/vsphere-xcopy-volume-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/vsphere-xcopy-volume-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/vsphere-xcopy-volume-populator-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-vsphere-xcopy-volume-populator-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-bundle-dev-preview
       source: registry.stage.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-controller-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-controller-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-api-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-api-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-api-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-api-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-must-gather-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-must-gather-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-must-gather-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-must-gather-rhel8
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-console-plugin-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-console-plugin-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-console-plugin-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-console-plugin-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/validation-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/validation-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/validation-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-validation-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/virt-v2v-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/virt-v2v-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/virt-v2v-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-virt-v2v-rhel9
     - mirrors:
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-9/virt-v2v-int-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-2-10/virt-v2v-int-2-10
+        - quay.io/redhat-user-workloads/rh-mtv-btrfs-tenant/forklift-operator-int-dev-preview/virt-v2v-int-dev-preview
+      source: registry.stage.redhat.io/mtv-candidate/mtv-virt-v2v-rhel10
+    - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/populator-controller-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/populator-controller-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/populator-controller-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-populator-controller-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ovirt-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ovirt-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ovirt-populator-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-rhv-populator-rhel8
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/openstack-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/openstack-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/openstack-populator-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-openstack-populator-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/ova-provider-server-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/ova-provider-server-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/ova-provider-server-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-ova-provider-server-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/vsphere-xcopy-volume-populator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/vsphere-xcopy-volume-populator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/vsphere-xcopy-volume-populator-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-vsphere-xcopy-volume-populator-rhel9
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-rhel9-operator
     - mirrors:
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-9/forklift-operator-bundle-2-9
+        - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10
         - quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-dev-preview/forklift-operator-bundle-dev-preview
       source: registry.stage.redhat.io/mtv-candidate/mtv-operator-bundle
 
