@@ -15,6 +15,11 @@
         {
           "name": "mtv-operator.v2.10.0",
           "skipRange": ">=0.0.0 <2.10.0"
+        },
+        {
+          "name": "mtv-operator.v2.10.1",
+          "replaces": "mtv-operator.v2.10.0",
+          "skipRange": ">=0.0.0 <2.10.1"
         }
       ],
       "name": "release-v2.10",
@@ -123,6 +128,10 @@
     {
       "schema": "olm.bundle",
       "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:2b5b5fd045b60dff0d0034b212b9382b3db036ac3418ae7d424c26ad8341636b"
+    },
+    {
+      "schema": "olm.bundle",
+      "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:4a6e03ff32f97be2dd1c6ce57ed5ea18406d547a5b66ca5be03ae0f1bfb86d05"
     }
   ]
 }
