@@ -71,7 +71,7 @@
     },
     {
       "schema": "olm.bundle",
-      "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:b40bfca74489221602c3da69e0edd4a26f3816f663ce3e2a33862f8eec77ae47"
+      "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:71c7b038abac85af919ce977144892b6125a36f807b88f2a223b9450e4593fab"
     }
   ]
 }
