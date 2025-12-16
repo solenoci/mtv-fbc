@@ -2210,7 +2210,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.2",
     "package": "mtv-operator",
-    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:c4d971a719b3d9e4eadeddbf70ec542efdae235ced2bb30d32d568d8ea287dd4",
+    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9",
     "properties": [
         {
             "type": "olm.gvk",
@@ -2324,7 +2324,7 @@
                     "categories": "OpenShift Optional",
                     "certified": "true",
                     "containerImage": "registry.redhat.io/migration-toolkit-virtualization/mtv-rhel9-operator@sha256:f364639313bdcd065a5f6c71f74c7c7cf920e2919e1342e6b184780455c8fb6e",
-                    "createdAt": "2025-12-16T12:53:43Z",
+                    "createdAt": "2025-12-16T16:35:23Z",
                     "description": "Facilitates migration of VM workloads to OpenShift Virtualization",
                     "features.operators.openshift.io/cnf": "false",
                     "features.operators.openshift.io/cni": "false",
@@ -3250,7 +3250,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:c4d971a719b3d9e4eadeddbf70ec542efdae235ced2bb30d32d568d8ea287dd4"
+            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9"
         },
         {
             "name": "api",
@@ -3262,7 +3262,7 @@
         },
         {
             "name": "ui_plugin",
-            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:6ad8a33c7eccb26935acbebf454b64a1c1359da6f49dfdf4901749253d95178d"
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-console-plugin-rhel9@sha256:018f9305c10388d368b8a29ef6a827494492df23a3279265ff3e41971e1dda43"
         },
         {
             "name": "controller",
