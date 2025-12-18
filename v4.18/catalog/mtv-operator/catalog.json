@@ -2286,7 +2286,7 @@
     "schema": "olm.bundle",
     "name": "mtv-operator.v2.10.2",
     "package": "mtv-operator",
-    "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9",
+    "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9",
     "properties": [
         {
             "type": "olm.gvk",
@@ -3325,10 +3325,6 @@
     ],
     "relatedImages": [
         {
-            "name": "",
-            "image": "quay.io/redhat-user-workloads/rh-mtv-1-tenant/forklift-operator-2-10/forklift-operator-bundle-2-10@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9"
-        },
-        {
             "name": "api",
             "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-api-rhel9@sha256:7b5871df7274de2dd7df16f311fe97b8873b88032571d83216d6e61820aa288f"
         },
@@ -3351,6 +3347,10 @@
         {
             "name": "openstack_populator",
             "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-openstack-populator-rhel9@sha256:8ae52c3487c3eff996800be4321ef5cd594a6a451c2cfe9ed283c862e9fa5703"
+        },
+        {
+            "name": "",
+            "image": "registry.redhat.io/migration-toolkit-virtualization/mtv-operator-bundle@sha256:869705843f9c42a664f0e27afad9d609d2f8d56204f1fd2c693e340cc384afd9"
         },
         {
             "name": "ova_provider_server",
